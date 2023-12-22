@@ -1,0 +1,500 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    background: #fafafa;
+}
+
+.sidebar{
+    padding-top: 15px;
+    padding-left: 15px;
+    position: fixed;
+    width: 245px;
+    height: 100%;
+    background: white;
+    z-index: 2;
+    border-right: 1px solid rgba(219, 219, 219, 1);
+}
+
+.logo{
+    padding: 25px 12px 19px;
+    margin: 0px 0px 16px;
+}
+
+.logo-img img{
+    width: 103px;
+}
+
+.menu{
+    margin: 8px 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+}
+
+.menu-img {
+
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+
+.menu:hover{
+    background-color: rgb(240, 238, 240);
+    border-radius: 20px;
+
+}
+.menu a:hover,.menu .active{
+    color: #e2336b;
+    
+}
+.menu a:active{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.menu-img i{
+    display: flex;
+    margin-right: 1rem;
+    font-size: 24px;
+}
+
+#profile img{
+    margin-right: 1rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+
+.bars{
+    bottom: 0px; 
+    position: absolute;
+    margin: 8px 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    
+}
+
+.bars:hover{
+    background-color: rgb(240, 238, 240);
+    border-radius: 20px;
+}
+
+.bars a:hover{
+    color: #e2336b;
+}
+
+
+/* main section */
+section{
+    display: flex; 
+}
+
+.left-side{
+    width: 68%;
+    padding-left: 380px;
+    margin-top: 25px;
+}
+
+.scroller{
+    display: flex;
+    margin-left: -35px;
+    
+}
+
+.scroll-left{
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 17px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.3;
+
+}
+
+.scroll-right{
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+    opacity: 0.3;
+}
+.stories{
+   
+    padding: 16px;
+    padding-bottom: 10px;
+    width: 84%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219, 1);
+    border-radius: 8px;
+    overflow: auto;
+    overflow-x: scroll;
+}
+
+.stories::-webkit-scrollbar{
+    display: none;
+}
+
+.stories .story{
+    padding: 0.5px;
+    padding-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stories .story img{
+    width: 64px; 
+    height: 64px;
+    padding: 2px;
+    border: 2px solid #c62d8f;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.story .username{
+    width:90%;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+
+.post{
+   
+    width: 90%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219, 1);
+    border-radius: 8px;
+}
+
+.post-title{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.post-title .user{
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-pic img{
+
+    height: 40px;
+    width: 40px;
+    padding: 1px;
+    border: 2px solid #c62d8f;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.user .username{
+    width:auto;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.user .location{
+    width: auto;
+    font-weight: lighter;
+    color: #000;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.post-title i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.post-image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.reaction {
+    display: flex;
+}
+
+.reaction i{
+    font-size: 22px;
+    padding: 10px;
+    align-items: center;
+}
+
+ .save {
+ margin-left: auto;
+ margin-right: 10px;
+} 
+
+.likes{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font: 16px;
+    font-weight: bold;
+}
+
+.description{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.description span{
+    font-weight: normal;
+}
+
+.post-comments{
+    margin: 10px;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 14px
+}
+
+.post-time{
+    margin: 10px;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 10px
+}
+
+.comment{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgb(219, 219, 219, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.comment i{
+    margin-left: 10px;
+    font-size: 24px ;
+}
+
+.comment .comment-box{
+    padding-left: 10px;
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.comment-button{
+    width: 70px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: rgb(0, 162, 255);
+    opacity: 0.3;
+    font-weight: bold;
+}
+
+.right-side{
+    width: 40%;
+    margin-top: 40px;
+}
+
+.profile-section{
+    display: flex;
+   
+    padding-top: 15px;
+}
+
+
+.profile-image img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid  rgb(219, 219, 219, 1);
+    border-radius: 50%;
+    object-fit: contain;
+   
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    padding-left: 10px;
+    
+    padding-right: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-info .username{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profile-info .name{
+    font-size: 15px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.switch{
+    margin-left: 90px;
+    
+}
+
+.switch .switch-button{
+    width: 70px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+}
+
+.suggestions{
+    display: flex;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    text-transform: capitalize;
+}
+
+.suggestions .suggest{
+    margin-right: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.suggestions .see{
+    font-size: 12px;
+    margin-left: 30px;
+ }
+
+ .suggestion-title{
+    display: flex;
+    
+    margin-bottom: 10px;
+
+ }
+ 
+ .suggestion-image img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid  rgb(219, 219, 219, 1);
+    border-radius: 50%;
+    object-fit: contain;
+ }
+
+ .suggestion-info{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 5px;
+    margin-left: 6px;
+    
+ }
+
+ .suggestion-info .username{
+    font-size: 12px;
+    font-weight: bold;
+ }
+ 
+ .suggestion-info .suggested{
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(0, 0, 0, 0.5);
+ }
+
+.follow{
+    margin-left: 120px; 
+}
+
+.follow .follow-button{
+    width: 70px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+}
+
+.detail-section{
+    display: flex;
+    margin-top: -18px;
+    margin-left: 70px;
+    align-items: center;
+
+}
+
+.detail-section .box{
+    text-transform: capitalize;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.detail-section .number{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.detail-section .words{
+    font-size: 12px;
+    
+}
+
+
+footer p{
+    color: rgb(0, 0, 0, 0.5);
+    margin-top: 20px;
+    font-size: 12px;   
+}

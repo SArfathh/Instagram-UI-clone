@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<body>
+
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <!-- Instagram-logo -->
+        <div class="logo">
+            <a href="#" class="logo-img">
+                <img src="images/Instagram_Logo.png">
+            </a>
+        </div>
+        <div>
+            <!-- Home -->
+            <div class="menu">
+                <a href="#" class="menu-img">
+                    <div>
+                        <i class="fas fa-home"></i>
+                    </div>  
+                    <div>Home</div>    
+                </a>
+            </div>
+            <!-- Search -->
+            <div class="menu">
+                <a href="#" class="menu-img">
+                    <div>
+                        <i class="fas fa-search " aria-hidden="true"></i>
+                    </div>
+                    <div>Search</div>
+                </a>  
+            </div>
+            <!-- Explore -->
+            <div class="menu">
+                <a href="#" class="menu-img">
+                    <div>
+                        <i class="far fa-compass "></i>
+                    </div>
+                    <div>Explore</div>
+                </a>  
+            </div>
+            <!-- Messages -->
+            <div class="menu">
+                <a href="#" class="menu-img">
+                    <div>
+                        <i class="fab fa-facebook-messenger"></i>
+                    </div>
+                    <div>Messages</div>
+                </a>
+            </div>
+            <!-- Notifications -->
+            <div class="menu">
+                <a href="#" class="menu-img">
+                    <div>
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                        
+                    </div>
+                    <div>Notifications</div>
+                </a>    
+            </div>
+            <!-- Create -->
+            <div class="menu">
+                <a href="#" class="menu-img">
+                    <div>
+                        <i class="far fa-plus-square" aria-hidden="true"></i>
+                    </div>
+                    <div>Create</div>
+                </a>
+            </div>
+            <!-- profile -->
+            <div class="menu">
+                <a href="#" class="menu-img">
+                    <div id="profile">
+                        <img class="icon" src="images/img4.jpg"/>
+                    </div>
+                    <div>Profile</div>
+                </a>
+            </div>
+        </div>
+        <!-- more-->
+        <div class=" bars">
+            <a href="#" class="menu-img">
+                <div >
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div>More</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main section -->
+    <section class="main">
+        <div class="left-side">
+            <div class="scroller">
+                <div>
+                    <button class="scroll-left" onclick="scrolll()"> <i class="fas fa-angle-left"></i></button>
+                </div>
+                <div class="stories">
+                    <div class="story">
+                        <a href="#"><img src="images/img0.jpeg" alt="img" ></a>
+                        <p class="username">filty_rich_king</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/img1.jpg" alt="img" width="60px" height="60px"></a>
+                        <p class="username">classic_cars_ra</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/img2.jpg" alt="img" width="60px" height="60px"></a>
+                        <p class="username">stoner_turner</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/img3.jpg" alt="img" width="60px" height="60px" ></a>
+                        <p class="username">uzumaki_naru</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/img5.jpeg" alt="img" width="60px" height="60px" ></a>
+                        <p class="username">_nature_lover_</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/profile.jpg" alt="img" width="60px"  height="60px" ></a>
+                        <p class="username">otsusuki_boru</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/cave.jpg" alt="img" width="60px" height="60px" ></a>
+                        <p class="username">_explore_cat_</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/img.jpg" alt="img" width="60px"  height="60px" ></a>
+                        <p class="username">music__lover_</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/image1.jpg" alt="img" width="60px" height="60px" ></a>
+                        <p class="username">strange._.girl</p>
+                    </div>
+                    <div class="story">
+                        <a href="#"><img src="images/img6.jpeg" alt="img" width="60px"  height="60px" ></a>
+                        <p class="username">._flawless_</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="scroll-right" onclick="scrollr()"> <i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+
+            <!-- post-1 -->
+            <div class="post">
+                <div class="post-title">
+                    <div class="user">
+                        <div class="profile-pic">
+                        <img src="Images/img3.jpg" alt="" width= 60px>  
+                        </div>
+                        <div class="info">
+                            <p class="username"> uzumaki_naru </p>
+                            <p class="location"> Konaha, Land of fire</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <img src="images/image1.jpg" class="post-image" alt="">
+                <div class="post-content">
+                    <div class="reaction">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="far fa-comment fa-flip-horizontal"></i>
+                        <i class="far fa-paper-plane fa-rotate-by" style="--fa-rotate-angle: 30deg;"></i>
+                        <div class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        
+                    </div>
+                    <p class="likes">1,012 likes</p>
+                    <p class="description">uzumaki_naru <span>In the movment❤</span></p>
+                    <p class="post-comments">View all 10 comments </p>
+                    <p class="post-time">4 HOURS AGO</p>
+                    <div class="comment">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-button">Post</button>
+                    </div>
+                </div>
+            </div>
+            <!-- post-2 -->
+            <div class="post">
+                <div class="post-title">
+                    <div class="user">
+                        <div class="profile-pic">
+                        <img src="Images/img.jpg" alt="" width= 60px>  
+                        </div>
+                        <div class="info">
+                            <p class="username"> ._flawless._ </p>
+                            <p class="location"> Australia</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <img src="images/img2.jpg" class="post-image" alt="">
+                <div class="post-content">
+                    <div class="reaction">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="far fa-comment fa-flip-horizontal"></i>
+                        <i class="far fa-paper-plane fa-rotate-by" style="--fa-rotate-angle: 30deg;"></i>
+                        <div class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        
+                    </div>
+                    <p class="likes">8,034 likes</p>
+                    <p class="description"> ._flawless._ <span>🚗❤</span></p>
+                    <p class="post-comments">View all 100 comments </p>
+                    <p class="post-time">10 HOURS AGO</p>
+                    <div class="comment">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-button">Post</button>
+                    </div>
+                </div>
+            </div>
+            <!-- post-3 -->
+            <div class="post">
+                <div class="post-title">
+                    <div class="user">
+                        <div class="profile-pic">
+                        <img src="Images/img5.jpeg" alt="" width= 60px>  
+                        </div>
+                        <div class="info">
+                            <p class="username">_nature_lover_</p>
+                            <p class="location"> Peace</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <img src="images/cave.jpg" class="post-image" alt="">
+                <div class="post-content">
+                    <div class="reaction">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="far fa-comment fa-flip-horizontal"></i>
+                        <i class="far fa-paper-plane fa-rotate-by" style="--fa-rotate-angle: 30deg;"></i>
+                        <div class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        
+                    </div>
+                    <p class="likes">20,480 likes</p>
+                    <p class="description">_nature_lover_<span>mountains 🏞❤</span></p>
+                    <p class="post-comments">View all 1,489 comments </p>
+                    <p class="post-time">22 HOURS AGO</p>
+                    <div class="comment">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-button">Post</button>
+                    </div>
+                </div>
+            </div>
+            <!-- post-4 -->
+            <div class="post">
+                <div class="post-title">
+                    <div class="user">
+                        <div class="profile-pic">
+                        <img src="Images/profile.jpg" alt="" width= 60px>  
+                        </div>
+                        <div class="info">
+                            <p class="username"> otsusuki_boruto </p>
+                            <p class="location"> Narutoverse</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <img src="images/img6.jpeg" class="post-image" alt="">
+                <div class="post-content">
+                    <div class="reaction">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="far fa-comment fa-flip-horizontal"></i>
+                        <i class="far fa-paper-plane fa-rotate-by" style="--fa-rotate-angle: 30deg;"></i>
+                        <div class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        
+                    </div>
+                    <p class="likes">210 likes</p>
+                    <p class="description">otsusuki_boruto <span>Sun above🌤
+                        Water below🌊
+                        Peace within❤
+                    </span></p>
+                    <p class="post-comments">View all 19 comments </p>
+                    <p class="post-time">3 DAYS AGO</p>
+                    <div class="comment">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-button">Post</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-side">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="images/img4.jpg" alt="profile picture">
+                </div>
+                <div class="profile-info">
+                    <p class="username"> _.white_eyes._</p>
+                    <p class="name"> Gojo Saturo</p>
+                </div>
+                <div class="switch">
+                    <button class="switch-button">switch</button>
+                </div>
+            </div>
+            <div class="detail-section">
+                <div class="box">
+                    <p class="number">1,019</p>
+                    <p class="words"> posts</p>
+                </div>
+                <div class="box">
+                    <p class="number">4.2M</p>
+                    <p class="words">followers</p>
+                </div>
+                <div class="box">
+                    <p class="number">915</p>
+                    <p class="words">following</p>
+                </div>
+
+            </div>
+            <div class="suggestions">
+                <p class="suggest">suggestions for you</p>
+                <p class="see">see all</p>
+            </div>
+            <div class="suggestion-title">
+                <div class="suggestion-image">
+                    <img src="images/img6.jpeg" alt="profile picture">
+                </div>
+                <div class="suggestion-info">
+                    <p class="username"> ._the_rockster</p>
+                    <p class="suggested"> Suggested for you</p>
+                </div>
+                <div class="follow">
+                    <button class="follow-button">follow</button>
+                </div>
+            </div>
+            <div class="suggestion-title">
+                <div class="suggestion-image">
+                    <img src="images/profile.jpg" alt="profile picture">
+                </div>
+                <div class="suggestion-info">
+                    <p class="username">otsusuki_boruto</p>
+                    <p class="suggested"> Suggested for you</p>
+                </div>
+                <div class="follow">
+                    <button class="follow-button">follow</button>
+                </div>
+            </div>
+            <div class="suggestion-title">
+                <div class="suggestion-image">
+                    <img src="images/cave.jpg" alt="profile picture">
+                </div>
+                <div class="suggestion-info">
+                    <p class="username"> nature_explore._</p>
+                    <p class="suggested"> Suggested for you</p>
+                </div>
+                <div class="follow">
+                    <button class="follow-button">follow</button>
+                </div>
+            </div>
+            <div class="suggestion-title">
+                <div class="suggestion-image">
+                    <img src="images/img2.jpg" alt="profile picture">
+                </div>
+                <div class="suggestion-info">
+                    <p class="username"> stoner_turner</p>
+                    <p class="suggested"> Suggested for you</p>
+                </div>
+                <div class="follow">
+                    <button class="follow-button">follow</button>
+                </div>
+            </div>
+            <div class="suggestion-title">
+                <div class="suggestion-image">
+                    <img src="images/img0.jpeg" alt="profile picture">
+                </div>
+                <div class="suggestion-info">
+                    <p class="username"> filty_rich_king</p>
+                    <p class="suggested"> Suggested for you</p>
+                </div>
+                <div class="follow">
+                    <button class="follow-button">follow</button>
+                </div>
+            </div>
+
+            <footer>
+                <p> &copy; 2022 Instagram from Syed Arfath </p>
+            </footer>
+        </div>
+
+    </section>  
+</body>
+<script>
+    function scrolll(){
+        var left = document.querySelector(".stories");
+        left.scrollBy(-350,0);
+    }
+    function scrollr(){
+        var right = document.querySelector(".stories");
+        right.scrollBy(350,0);
+    }
+</script>
+</html>
